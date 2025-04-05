@@ -1,0 +1,85 @@
+<!-- 
+    Author of this code: MOHAMMED MONTASIR RAHMAN
+    Student ID: c3421845
+-->
+
+<!-- HTML document starting point -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Contact GAME WORLD</title>
+
+    <style>
+      h3 {
+        font-size: 110%;
+        margin-bottom: 15px;
+      }
+
+      strong {
+        color: rgb(162, 179, 30);
+      }
+    </style>
+  </head>
+
+  <!-- body starting point -->
+  <body>
+    <div class="contact">
+      <!-- Main navigation bar starting point-->
+      <header>
+      <nav>
+        <ul id="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html"  id="active">Contact</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms & Conditions</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+      <div class="contact-main">
+       
+            <h1 style="text-align: center">Contact Us</h1>
+            <p style="text-align: center" class="contact-paragraph">
+             <em>Lets connect so we can get to know your <span style="color: rgb(234, 217, 226);">reviews, suggestions or anythings else</span> you wanted to say</em> 
+            </p>
+          <!-- Form starting point -->
+            <div class="contact-form">
+                <h2>Contact Form</h2>
+                <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+
+                    <label for="contact-number">Contact Number:</label>
+                    <input type="tel" id="contact-number" name="contact-number" required>
+
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required>
+
+                    <label for="email">Message:</label>
+                    <textarea name="message" id="message" rows="4" required></textarea>
+
+                    <div class="buttons">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Clear">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- HTML footer starting point-->
+        <footer style="color: white; text-align: right">
+          <p class="copy-para">
+            Copyright &copy; All rights reserved. Created by MOHAMMED MONTASIR RAHMAN<br>        
+            MOHAMMED.MONTASIRRAHMAN@uon.edu.au<br>
+            Contact: 04930440303
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

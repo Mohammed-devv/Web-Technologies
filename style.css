@@ -1,0 +1,232 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 21px;
+  letter-spacing: 1px;
+  text-rendering: optimizeLegibility;
+}
+
+/* Background images for all pages */
+.home,
+.about,
+.contact,
+.privacy {
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(
+      rgba(163, 145, 163, 0.712),
+      rgba(76, 76, 77, 0.769)
+    ),
+    url(images/BFFsnBO.jpg);
+}
+
+/*Navigations*/
+
+header {
+  background-color: #57b61c;
+  padding: 14px;
+}
+
+#nav-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  list-style-type: none;
+}
+
+nav li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: rgb(171, 56, 24);
+}
+
+#active {
+  color: rgb(169, 192, 43);
+}
+
+/*Headings*/
+
+h1 {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  font-size: 185%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 160%;
+  word-spacing: 1.5px;
+  text-align: center;
+  margin-top: 31px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h2:hover {
+  color: #11c711;
+}
+
+/*Home page*/
+
+.main-paragraph {
+  padding: 0 10%;
+  margin-bottom: 40px;
+}
+
+.gameList {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-around;
+}
+
+.gameList li {
+  text-align: center;
+  border: solid 3px rgb(21, 195, 50);
+  box-shadow: 12px 12px 2px rgba(110, 144, 106, 0.5);
+  margin: 0 20px;
+  padding: 10px 0;
+}
+
+.GameImg {
+  width: 150px;
+  height: 150px;
+}
+
+.GameImg:hover {
+  transform: scale(1.4);
+}
+
+.gameDiscription {
+  margin: 30px;
+  font-size: 18px;
+}
+
+.link-para {
+  margin-top: 15px;
+  color: rgb(195, 114, 33);
+}
+
+footer {
+  margin-top: 50px;
+  background-color: #333;
+}
+.copy-para {
+  font-size: 13px;
+  margin-top: 20px;
+  padding: 15px 0;
+}
+
+/* About page*/
+
+.about-main {
+  height: 79vh;
+  padding-top: 8%;
+  text-align: center;
+  display: flex;
+}
+
+.about-content {
+  margin-top: -60px;
+  margin-left: 90px;
+}
+
+.aboutImage {
+  margin-left: 100px;
+  margin-right: 50px;
+  height: 95%;
+  width: 40%;
+}
+
+/* contact page*/
+
+.contact-main {
+  width: 60%;
+  text-align: left;
+  margin-left: 20%;
+}
+.contact-form {
+  background-color: rgba(188, 202, 33, 0.463);
+  border-radius: 30px;
+  padding: 50px;
+  margin: 20px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-form lable {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #49b51f;
+  color: rgb(23, 163, 68);
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-form input[type="submit"],
+.contact-form input[type="reset"] {
+  background-color: #974d51;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form input[type="submit"]:hover,
+.contact-form input[type="reset"]:hover {
+  background-color: #30bf08;
+}
+
+/* policy and terms */
+
+.privacy-content {
+  width: 90%;
+  text-align: center;
+  margin-left: 5%;
+}
+
+.point {
+  margin-top: a5px;
+  font-size: 18px;
+}
+
+.head {
+  margin-top: 35px;
+}
+
+.privacy-container {
+  display: flex;
+}

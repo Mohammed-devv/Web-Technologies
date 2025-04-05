@@ -1,0 +1,79 @@
+<?xml version ="1.0" encoding ="UTF-8"?>
+
+<!DOCTYPE gamesTemplate [
+    <!ELEMENT gamesTemplate (gamesCategory+)>
+    <!ELEMENT gamesCategory (games+)>
+    <!ELEMENT games (name, description, subject, gradeLevel, searchTags*, cost?, equipmentRequired+, reviews*, picture+, webpage)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT subject (#PCDATA)>
+    <!ELEMENT gradeLevel (#PCDATA)>
+    <!ELEMENT searchTags (#PCDATA)>
+    <!ELEMENT cost (#PCDATA)>
+    <!ELEMENT equipmentRequired (name | additionalCost)>
+    <!ELEMENT additionalCost (#PCDATA)>
+    <!ELEMENT reviews (review*)>
+    <!ELEMENT review (#PCDATA)>
+    <!ELEMENT picture (#PCDATA)>
+    <!ELEMENT webpage (#PCDATA)>
+	
+	<!ATTLIST gamesCategory category CDATA #REQUIRED>
+    <!ATTLIST review stars CDATA #IMPLIED>
+]>
+
+<gamesTemplate>
+    <gamesCategory category="Mobile Games">
+        <games>
+        <name>UNO Mattel</name>
+        <description>UNO is a popular card game where players match colors and numbers to be the first to empty their hand.</description>
+        <subject>UNO</subject>
+        <gradeLevel>Easy</gradeLevel>
+        <searchTags>uno, mobile, mobile games</searchTags>
+        <cost>$20</cost>
+        <equipmentRequired>
+            <name>None</name>
+        </equipmentRequired>
+        <reviews>
+        <review stars="5">So much fun to play</review>
+        </reviews>
+        <picture></picture>
+        <webpage></webpage>
+        </games>
+
+        <games>
+        <name>Hill Climb Racing</name>
+        <description>Hill Climb Racing is a physics-based driving game focused on navigating challenging terrain with various vehicles.</description>
+        <subject>Arcade</subject>
+        <gradeLevel>Mediocre</gradeLevel>
+        <searchTags>racing, mobile, mobile games, arcade</searchTags>
+        <cost>free download</cost>
+        <equipmentRequired>
+            <name>None</name>
+        </equipmentRequired>
+        <reviews>
+        <review stars="2">Poor controls</review>
+        <review stars="5">My kid keeps playing all day</review>
+        </reviews>
+        <picture></picture>
+        <webpage></webpage>
+        </games>
+
+        <games>
+        <name>Fruit Ninja</name>
+        <description>Fruit Ninja is a fast-paced mobile game where players swipe to slice flying fruits while avoiding bombs</description>
+        <subject>Cutting fruits</subject>
+        <gradeLevel>Hard</gradeLevel>
+        <searchTags>fruit, cutting, swipe games, mobile, mobile games</searchTags>
+        <cost>$50</cost>
+        <equipmentRequired>
+            <name>None</name>
+        </equipmentRequired>
+        <reviews>
+        <review stars="5">So much fun to play</review>
+        </reviews>
+        <picture></picture>
+        <webpage>https://en.wikipedia.org/wiki/Fruit_Ninja</webpage>
+        </games>
+
+    </gamesCategory>
+</gamesTemplate>    

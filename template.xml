@@ -1,0 +1,43 @@
+<?xml version ="1.0" encoding ="UTF-8"?>
+
+<!DOCTYPE gamesTemplate [
+    <!ELEMENT gamesTemplate (gamesCategory+)>
+    <!ELEMENT gamesCategory (games+)>
+    <!ELEMENT games (name, description, subject, gradeLevel, searchTags*, cost?, equipmentRequired+, reviews*, picture+, webpage)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT subject (#PCDATA)>
+    <!ELEMENT gradeLevel (#PCDATA)>
+    <!ELEMENT searchTags (#PCDATA)>
+    <!ELEMENT cost (#PCDATA)>
+    <!ELEMENT equipmentRequired (name | additionalCost)>
+    <!ELEMENT additionalCost (#PCDATA)>
+    <!ELEMENT reviews (review*)>
+    <!ELEMENT review (#PCDATA)>
+    <!ELEMENT picture (#PCDATA)>
+    <!ELEMENT webpage (#PCDATA)>
+	
+	<!ATTLIST gamesCategory category CDATA #REQUIRED>
+    <!ATTLIST review stars CDATA #IMPLIED>
+]>
+
+<gamesTemplate>
+    <gamesCategory category="">
+    <games>
+        <name>test</name>
+        <description>test</description>
+        <subject>test</subject>
+        <gradeLevel>test</gradeLevel>
+        <searchTags>test</searchTags>
+        <cost>test</cost>
+        <equipmentRequired>
+            <name>test</name>
+        </equipmentRequired>
+        <reviews>
+        <review><stars=""></review>
+        </reviews>
+        <picture>test</picture>
+        <webpage>test</webpage>  
+    </games>
+    </gamesCategory>
+</gamesTemplate>
